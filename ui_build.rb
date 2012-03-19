@@ -5,9 +5,9 @@ require 'filesystemwatcher'
 require 'servicestate'
 
 if ARGV[0] == '-h' || ARGV[0] == '--help'
-  puts "usage: ui_build.rb [-w|--watch] <base dir>\n" +
+  puts "usage: ui_build.rb [-w|--watch] [BASEDIR]\n" +
        "w: watch mode\n"+
-       "base dir: base of directory hierarchy you want to watch or "+
+       "BASEDIR: base of directory hierarchy you want to watch or "+
        "immediately build all .ui files from\n(default is current directory)"
   exit
 end
